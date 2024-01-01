@@ -1,0 +1,176 @@
+:root {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #272727;
+    --text-primary: #f1f1f1;
+    --text-secondary: #aaa;
+}
+
+body {
+    background: var(--bg-primary)
+}
+
+/* Navbar */
+.ProfileIntroBarWrapper {
+    background: var(--bg-primary);
+}
+
+.ProfileIntroBarWrapper .shadow-box {
+    display: none;
+}
+
+.ProfileNavItem {
+    color: var(--text-primary);
+}
+
+.ProfileNavItem.active {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.ProfileNavItem:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+
+/* Content */
+.route-wrapper {
+    background-color: var(--bg-primary) !important;
+}
+
+.PostTileTitle {
+    color: var(--text-primary);
+}
+
+.PostTileMediaBox .duration {
+    color: var(--text-secondary) !important;
+}
+
+.PostTileInfoMinor,
+.PostTileCreator,
+.PostTileAge {
+    color: var(--text-secondary) !important;
+}
+
+
+/* Channel Stats */
+.ChannelStatsContainer,
+.ChannelStatsContainer > div .subs-count,
+.ChannelStatsContainer > div .income-value,
+.ChannelStatsContainer > div .title {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.ReactCreatorPlanBoxContainer {
+    background: var(--bg-secondary);
+}
+
+.ReactPlanBoxHeaderContainer .title {
+    color: var(--text-primary);
+}
+
+.ReactCreatorPlanBoxDescription {
+    color: #71717a;
+}
+
+/* About */
+.markdown-body {
+    color: var(--text-secondary);
+}
+
+
+/* Description */
+.ReactDescriptionHeaderComponent .video-title .title-text {
+    color: var(--text-primary);
+}
+
+.ReactDescriptionHeaderComponent .section-channel .info .channel-title {
+    color: var(--text-primary);
+}
+
+.ReactDescriptionHeaderComponent .section-channel .info .post-date {
+    color: var(--text-secondary);
+}
+
+.DescriptionBodyComponent .text-container:after {
+    background: linear-gradient(to top, var(--bg-primary) 0%, rgba(255, 255, 255, 0) 70%);
+    transition: none;
+}
+
+.DescriptionBodyComponent .text-container.open {
+    color: var(--text-primary)
+}
+
+.DescriptionBodyComponent .text-container.open * {
+    color: var(--text-primary) !important;
+}
+
+
+/* Comments */
+.CommentReplyInput textarea,
+.CommentEditInput textarea {
+    background: var(--bg-primary);
+    color: var(--text-primary)
+}
+
+.CommentReplyInput textarea::placeholder,
+.CommentEditInput textarea::placeholder {
+    color: var(--text-primary);
+}
+
+.ReactCommentComponent .comment-header .author {
+    color: var(--text-primary);
+}
+
+.ReactCommentComponent .comment-header .date {
+    color: var(--text-secondary);
+}
+
+.ReactCommentBodyComponent .comment-body {
+    color: var(--text-primary);
+}
+
+.ReactCommentComponent .comment-actions,
+.ReactContentButton.variant-text,
+.ReactContentButton.variant-icon-text,
+.ReactContentButton {
+    color: var(--text-primary);
+}
+
+.ReactContentButton.variant-interaction > svg * {
+    fill: var(--text-primary);
+}
+
+
+/* Recommended */
+.ReactRelatedPostList .related-section > .title {
+    color: var(--text-primary)
+}
+
+/* Browse Creators */
+.ReactBrowseCreatorsPage .creator-search .search-bar {
+    background: #121212;
+    color: var(--text-secondary)
+}
+
+.ReactBrowseCreatorsPage .creator-search .material-icons.icon-search,
+.ReactBrowseCreatorsPage input::placeholder {
+    color: var(--text-secondary) !important;
+}
+
+.ReactBrowseCreatorsPage.route-wrapper {
+    background: var(--bg-primary) !important;
+}
+
+.BrowseCreatorBox {
+    background: #121212;
+}
+
+.BrowseCreatorBox:hover {
+    background: var(--bg-secondary);
+}
+
+.BrowseCreatorBox .part-info {
+    color: var(--text-primary)
+}
